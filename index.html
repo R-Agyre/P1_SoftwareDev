@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Page</title>
+    <link rel= "stylesheet" href= "style.css">
+    <link rel="shortcut icon" href="profile.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="info_card">
+        <img src= "DA.jpg" alt= "Profile picture of Demilade Adeyemo" class= "pfp"/>
+        <h2 class="name">Demilade Adeyemo</h2>
+        <p>
+            <b>Student</b>
+            <em> 22CK031288 </em>
+        </p>
+        <h6>Computer Engineering</h6>
+        
+        <!-- User Details -->
+        <form class="details-holder">
+            <input type="email" id="email" class="email" placeholder="Enter your email address" required />
+            <textarea class="text" id="message" placeholder="Share your thoughts..."></textarea>
+        </form>
+
+        <button onclick="sendEmail()">Contact me</button>
+    </div>
+    <!-- Notification -->
+    <p id="toast" class="message">Your message was sent successfully!</p>
+
+    <!-- Interactive function -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
